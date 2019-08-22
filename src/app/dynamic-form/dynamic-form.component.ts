@@ -24,6 +24,5 @@ export class DynamicFormComponent implements OnInit {
 
   onSubmit() {
     console.log(this.form.value);
-    // this.payLoad = JSON.stringify(this.form.value);
   }
 }

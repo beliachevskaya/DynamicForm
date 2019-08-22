@@ -1,8 +1,8 @@
 <div class="container" [formGroup]="form">
-  <!-- <label [attr.for]="question.key">{{question.label}}</label> -->
   <div [ngSwitch]="question.controlType">
     <mat-icon matPrefix class="md-18" [ngStyle]="{'color': 'grey'}">{{question.icon}}</mat-icon>
     <input
+      class="input"
       *ngSwitchCase="'textbox'"
       [formControlName]="question.key"
       [id]="question.key"
